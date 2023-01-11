@@ -12,43 +12,6 @@ optional arguments:
   -h, --help       show this help message and exit
   --config CONFIG  Config with task (schema) and data information.
 ```
-
-### Configuration file
-
-A configuration file containing the task and evaluation information should look like this:
-
-```json
-{
-    "name": "BabelDomains",
-    "task_name": "topic-classification",
-    "features_class": "a2t.tasks.text_classification.TopicClassificationFeatures",
-    "hypothesis_template": "The domain of the sentence is about {label}.",
-    "nli_models": [
-        "roberta-large-mnli"
-    ],
-    "labels": [
-        "Animals",
-        "Art, architecture, and archaeology",
-        "Biology",
-        "Business, economics, and finance",
-        "Chemistry and mineralogy",
-        "Computing",
-        "Culture and society",
-        ...
-        "Royalty and nobility",
-        "Sport and recreation",
-        "Textile and clothing",
-        "Transport and travel",
-        "Warfare and defense"
-    ],
-    "preprocess_labels": true,
-    "dataset": "babeldomains",
-    "test_path": "data/babeldomains.domain.gloss.tsv",
-    "use_cuda": true,
-    "half": true
-}
-```
-
 """
 import argparse
 import json
@@ -156,5 +119,5 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser("a2t.evaluation")
     parser.add_argument("--config", type=str, help="Config with task (schema) and data information.")
 
-    args = parser.parse_args()
+    args = parser.parse_args(['--config', 'config_nodev.json'])
     main(args)

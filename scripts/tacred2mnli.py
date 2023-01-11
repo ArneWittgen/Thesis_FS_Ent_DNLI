@@ -83,6 +83,13 @@ negative_templates: Dict[str, list] = defaultdict(list)
 if not args.negative_pattern:
     templates = templates[1:]
 
+"""
+RE: Documentation
+if the template appears in TACRED_LABEL_TEMPLATES, it is added to positive, otherwise negative.
+I think this is just to check if all templates listed here also exist in the config file!
+
+Problem: can't really check this because the TACRED_LABELS and _LABEL_TEMPLATES files are missing
+"""
 for label in TACRED_LABELS:
     if not args.negative_pattern and label == "no_relation":
         continue

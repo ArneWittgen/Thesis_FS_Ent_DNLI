@@ -1,0 +1,65 @@
+"favorite":  [
+            "{subj} have {obj} as a favorite.",
+            "{subj} has {obj} as a favorite.",
+            "{subj}\u00e2\u0080\u0099s favorite is {obj}."
+        ],
+        "favorite_season":  [
+            "{subj} have {obj} as favorite season.",
+            "{subj} has {obj} as favorite season.",
+            "{subj}\u00e2\u0080\u0099s favorite season is {obj}."
+        ],
+        "favorite_activity":  [
+            "{subj} have {obj} as favorite activity.",
+            "{subj} has {obj} as favorite activity.",
+            "{subj}\u00e2\u0080\u0099s favorite activity is {obj}."
+        ],
+        "favorite_color":  [
+            "{subj} have {obj} as favorite color.",
+            "{subj} has {obj} as favorite color.",
+            "{subj}\u00e2\u0080\u0099s favorite color is {obj}."
+        ],
+        "favorite_music":  [
+            "{subj} have {obj} as favorite music.",
+            "{subj} has {obj} as favorite music.",
+            "{subj}\u00e2\u0080\u0099s favorite music is {obj}."
+        ],
+        "favorite_food":  [
+            "{subj} have {obj} as favorite food.",
+            "{subj} has {obj} as favorite food.",
+            "{subj}\u00e2\u0080\u0099s favorite food is {obj}."
+        ],
+        "favorite_drink":  [
+            "{subj} have {obj} as favorite drink.",
+            "{subj} has {obj} as favorite drink.",
+            "{subj}\u00e2\u0080\u0099s favorite drink is {obj}."
+        ],
+        "favorite_animal":  [
+            "{subj} have {obj} as favorite animal.",
+            "{subj} has {obj} as favorite animal.",
+            "{subj}\u00e2\u0080\u0099s favorite animal is {obj}."
+        ],
+        "favorite_music_artist":  [
+            "{subj} have {obj} as favorite artist.",
+            "{subj} has {obj} as favorite artist.",
+            "{subj}\u00e2\u0080\u0099s favorite artist is {obj}."
+        ],
+        "favorite_sport":  [
+            "{subj} have {obj} as favorite sport.",
+            "{subj} has {obj} as favorite sport.",
+            "{subj}\u00e2\u0080\u0099s favorite sport is {obj}."
+        ],
+        "favorite_show":  [
+            "{subj} have {obj} as favorite show.",
+            "{subj} has {obj} as favorite show.",
+            "{subj}\u00e2\u0080\u0099s favorite show is {obj}."
+        ],
+        "favorite_hobby":  [
+            "{subj} have {obj} as favorite hobby.",
+            "{subj} has {obj} as favorite hobby.",
+            "{subj}\u00e2\u0080\u0099s favorite hobby is {obj}."
+        ],
+        "favorite_movie":  [
+            "{subj} have {obj} as favorite movie.",
+            "{subj} has {obj} as favorite movie.",
+            "{subj}\u00e2\u0080\u0099s favorite movie is {obj}."
+        ],
