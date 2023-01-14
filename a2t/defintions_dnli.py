@@ -67,6 +67,23 @@ class DNLIRelationClassificationDataset(Dataset):
                         # for tagging
                         # inst_type=f"{line['subj_type']}:{line['obj_type']}",
                         context=line['sentence1'],
-                        label=line['label'],
+                        # needs to be mapped depending on whether sentence2 is entailed or not
+                        label=relation_mapper(line),
                     )
                 )
+
+
+def relation_mapper(line: Dict):
+    """
+    Determines the appropriate relation for a given dataset entry,
+    depending on the label (positive, neutral, contradiction).
+
+    Currently only supports distinction between positive and non-positive relations;
+    TACRED does not have any contradictory statements, so unclear how to handle these.
+    For now, contradiction and neutral are both mapped to no_relation.
+    """
+    if line['label'] == 'positive':
+        relation = line['triple2'][1]
+    else:
+        relation = "no_relation"
+    return relation

@@ -10,6 +10,7 @@
         "HiTZ/A2T_RoBERTa_SMFA_TACRED-re"
     ],
     "labels": [
+        "no_relation",
         "has_profession",
         "employed_by_general",
         "like_food",
@@ -68,6 +69,9 @@
         "favorite_movie"
     ],
     "templates": {
+        "no_relation": [
+            "{subj} and {obj} are not related."
+        ],
         "has_profession":  [
             "{subj} work as {obj}.",
             "{subj} works as {obj}."

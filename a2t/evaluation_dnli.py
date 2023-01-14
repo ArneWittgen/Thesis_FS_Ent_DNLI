@@ -25,8 +25,6 @@ import torch
 from a2t.tasks.tuple_classification import TACREDFeatures
 from a2t.base import EntailmentClassifier
 from defintions_dnli import DLNIRelationClassificationTask, DNLIRelationClassificationDataset
-#from a2t.tasks.tuple_classification import DLNIRelationClassificationTask
-#from a2t.data.dnli import DNLIRelationClassificationDataset
 
 
 def main(args):
