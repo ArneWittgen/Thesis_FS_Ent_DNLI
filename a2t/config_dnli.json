@@ -1,9 +1,9 @@
 {
-    "name": "DNLI",
+    "name": "DNLI_TEST",
     "task_name": "dnli",
     "features_class": "a2t.tasks.tuple_classification.TACREDFeatures",
     "dataset": "dnli",
-    "test_path": "data/dialogue_nli/dialogue_nli_test.jsonl",
+    "test_path": "data/dialogue_nli/dnli_test_sample.jsonl",
     "use_cuda": true,
     "half": true,
     "nli_models": [

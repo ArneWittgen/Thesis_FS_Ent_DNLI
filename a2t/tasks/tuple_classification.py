@@ -142,3 +142,33 @@ class TACREDRelationClassificationTask(RelationClassificationTask):
             negative_label_id=0,
             **kwargs
         )
+
+
+class DLNIRelationClassificationTask(RelationClassificationTask):
+    """A class handler for DNLI Relation Classification task. It inherits from `RelationClassificationTask` class."""
+
+    def __init__(
+        self, labels: List[str], templates: Dict[str, List[str]], valid_conditions: Dict[str, List[str]], **kwargs
+    ) -> None:
+        """Initialization of the DNLI RelationClassification task
+
+        Args:
+            labels (List[str]): The labels for the task.
+            templates (Dict[str, List[str]]): The templates/verbalizations for the task.
+            valid_conditions (Dict[str, List[str]]): The valid conditions or constraints for the task.
+        """
+        for key in ["name", "required_variables", "additional_variables", "features_class", "multi_label", "negative_label_id"]:
+            kwargs.pop(key, None)
+        super().__init__(
+            "DNLI Relation Classification task",
+            labels=labels,
+            required_variables=["subj", "obj"],
+            # not used because it doesn't exist in DNLI; might be added later
+            # additional_variables=["inst_type"],
+            templates=templates,
+            valid_conditions=valid_conditions,
+            features_class=TACREDFeatures,
+            multi_label=True,
+            negative_label_id=0,
+            **kwargs
+        )

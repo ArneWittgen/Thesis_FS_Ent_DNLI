@@ -21,9 +21,12 @@ from types import SimpleNamespace
 import numpy as np
 import torch
 
-from a2t.tasks import PREDEFINED_TASKS
-from a2t.data import PREDEFINED_DATASETS
+# Changed imports to local path to avoid dependency on venv-located library files
+from a2t.tasks.tuple_classification import TACREDFeatures
 from a2t.base import EntailmentClassifier
+from defintions_dnli import DLNIRelationClassificationTask, DNLIRelationClassificationDataset
+#from a2t.tasks.tuple_classification import DLNIRelationClassificationTask
+#from a2t.data.dnli import DNLIRelationClassificationDataset
 
 
 def main(args):
@@ -33,10 +36,11 @@ def main(args):
 
     os.makedirs(f"experiments/{config.name}", exist_ok=True)
 
-    task_class, _ = PREDEFINED_TASKS[config.task_name]
+    # all task definitions are "hardcoded" as DNLI can't be added to library easily
+    task_class = DLNIRelationClassificationTask
     task = task_class.from_config(args.config)  # (**vars(config))
 
-    dataset_class = PREDEFINED_DATASETS[config.dataset]
+    dataset_class = DNLIRelationClassificationDataset
 
     assert hasattr(config, "dev_path") or hasattr(config, "test_path"), "At least a test or dev path must be provided."
 
