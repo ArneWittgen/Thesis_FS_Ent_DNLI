@@ -1,5 +1,5 @@
 {
-    "name": "DNLI_test_RoBERTa_TACRED",
+    "name": "DNLI_test_RoBERTa_vanilla",
     "task_name": "dnli",
     "features_class": "a2t.tasks.tuple_classification.TACREDFeatures",
     "dataset": "dnli",
@@ -7,7 +7,7 @@
     "use_cuda": true,
     "half": true,
     "nli_models": [
-        "HiTZ/A2T_RoBERTa_SMFA_TACRED-re"
+        "roberta-large-mnli"
     ],
     "labels": [
         "no_relation",
