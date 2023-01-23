@@ -6,6 +6,14 @@ setuptools==59.5.0
 torchmetrics==0.8.2
 a2t
 
+# hugginface run_glue dependencies (according to their requirements.txt)
+accelerate
+datasets
+sentencepiece
+scipy
+protobuf
+evaluate
+
 # random stuff that might be necessary
 json
 numpy==1.23.4

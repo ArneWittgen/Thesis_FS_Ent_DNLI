@@ -1,9 +1,9 @@
 {
-    "name": "DNLI_TEST",
+    "name": "DNLI_test_RoBERTa_TACRED",
     "task_name": "dnli",
     "features_class": "a2t.tasks.tuple_classification.TACREDFeatures",
     "dataset": "dnli",
-    "test_path": "data/dialogue_nli/dnli_test_sample.jsonl",
+    "test_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_clean_test.jsonl",
     "use_cuda": true,
     "half": true,
     "nli_models": [

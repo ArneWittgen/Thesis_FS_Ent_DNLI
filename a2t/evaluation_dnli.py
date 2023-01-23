@@ -16,7 +16,6 @@ optional arguments:
 import argparse
 import json
 import os
-from pprint import pprint
 from types import SimpleNamespace
 import numpy as np
 import torch
@@ -121,5 +120,5 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser("a2t.evaluation")
     parser.add_argument("--config", type=str, help="Config with task (schema) and data information.")
 
-    args = parser.parse_args(['--config', 'config_dnli.json'])
+    args = parser.parse_args()
     main(args)
