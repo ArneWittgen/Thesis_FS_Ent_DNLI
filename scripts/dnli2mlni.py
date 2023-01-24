@@ -15,7 +15,7 @@ class REInputFeatures:
     subj: str
     obj: str
     context: str
-    pair_type: str = None
+    relation: str = None
     label: str = None
 
 
@@ -28,75 +28,16 @@ class MNLIInputFeatures:
 
 # sys.path.append("./")
 parser = ArgumentParser()
-input_path = os.path.join("dialogue_nli", "dialogue_nli_test.jsonl")
-output_path = os.path.join("dialogue_nli", "dialogue_nli_test.mlni.jsonl")
+input_path = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_dev_full.jsonl'))
+output_path = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_dev_full.mnli.json'))
 parser.add_argument("--input_file", type=str, default=input_path)
-# parser.add_argument('--model', type=str, default='microsoft/deberta-v2-xlarge-mnli')
 parser.add_argument("--output_file", type=str, default=output_path)
 parser.add_argument("--negative_pattern", action="store_true", default=False)
 parser.add_argument("--negn", type=int, default=1)
 
 args = parser.parse_args()
-
-# available relations
-relation_labels = [
-    "has_profession",
-    "employed_by_general",
-    "like_food",
-    "physical_attribute",
-    "place_origin",
-    "like_read",
-    "have",
-    "have_chidren",
-    "like_activity",
-    "have_sibling",
-    "like_drink",
-    "marital_status",
-    "live_in_citystatecountry",
-    "employed_by_company",
-    "teach", "dislike",
-    "attend_school",
-    "like_music",
-    "job_status",
-    "favorite_season",
-    "like_animal",
-    "want_do",
-    "have_pet",
-    "own",
-    "favorite_activity",
-    "has_hobby",
-    "has_ability",
-    "school_status",
-    "favorite_color",
-    "favorite_music",
-    "has_age",
-    "misc_attribute",
-    "live_in_general",
-    "gender",
-    "favorite_food",
-    "like_general",
-    "previous_profession",
-    "have_vehicle",
-    "like_sports",
-    "favorite_drink",
-    "favorite_animal",
-    "has_degree",
-    "like_goto",
-    "favorite_music_artist",
-    "want",
-    "want_job",
-    "like_watching",
-    "favorite_sport",
-    "member_of",
-    "have_family",
-    "not_have",
-    "favorite_show",
-    "like_movie",
-    "favorite_hobby",
-    "favorite",
-    "nationality",
-    "favorite_movie"
-]
 
 relation_templates = {
     "has_profession": [
@@ -379,6 +320,16 @@ relation_templates = {
         "{subj} has {obj} as a favorite.",
         "{subj}\u00e2\u0080\u0099s favorite is {obj}."
     ],
+    "favorite_place": [
+        "{subj} have {obj} as favorite place.",
+        "{subj} has {obj} as favorite place.",
+        "{subj}\u00e2\u0080\u0099s favorite place is {obj}."
+    ],
+    "favorite_book": [
+        "{subj} have {obj} as favorite book.",
+        "{subj} has {obj} as favorite book.",
+        "{subj}\u00e2\u0080\u0099s favorite book is {obj}."
+    ],
 
     "want_do": [
         "{subj} want to do {obj}.",
@@ -403,150 +354,28 @@ relation_templates = {
     ]
 }
 
-# problem for templates: sentences can be in first or second person
-# not quite sure what these templates do - they are just sentence versions of the available relations in tacred2mlni
-templates = [
-    "{subj} and {obj} are not related",
-    "{subj} work as {obj}.",
-    "{subj} works as {obj}.",
-    "{subj} am an employee of {obj}.",
-    "{subj} is an employee of {obj}.",
-    "{subj} used to work as {obj}.",
-    "{subj} am member of {obj}.",
-    "{subj} is member of {obj}.",
-    "{subj} teach {obj}.",
-    "{subj} teaches {obj}.",
-    "{subj} studied in {obj}.",
-    "{subj} have a degree in {obj}.",
-    "{subj} has a degree in {obj}.",
-    "{subj} am currently {obj}.",
-    "{subj} is currently {obj}.",
-    "{subj} was born in {obj}.",
-    "{obj} is the nationality of {subj}.",
-    "{subj} live in {obj}.",
-    "{subj} lives in {obj}.",
-    "{subj} am {obj}.",
-    "{subj} is {obj}.",
-    "{subj} am a {obj}.",
-    "{subj} is a {obj}.",
-    "{subj} am the parent of {obj}.",
-    "{subj} is the parent of {obj}.",
-    "{subj} and {obj} are siblings.",
-    "{subj} and {obj} are family.",
-    "{subj} am the spouse of {obj}.",
-    "{subj} is the spouse of {obj}.",
-    "{subj} have {obj}.",
-    "{subj} has {obj}.",
-    "{subj} have a {obj}.",
-    "{subj} has a {obj}.",
-    "{subj} have {obj} as a hobby.",
-    "{subj} has {obj} as a hobby.",
-    "{subj} have the ability to {obj}.",
-    "{subj} has the ability to{obj}.",
-    "{subj} am {obj} years old.",
-    "{subj} is {obj} years old.",
-    "{subj} don't have {obj}.",
-    "{subj} doesn't have {obj}.",
-    "{subj} own {obj}.",
-    "{subj} owns {obj}.",
-    "{subj} like {obj}.",
-    "{subj} likes {obj}.",
-    "{subj} like to eat {obj}.",
-    "{subj} likes to eat {obj}.",
-    "{subj} like to read {obj}.",
-    "{subj} likes to read {obj}.",
-    "{subj} like to {obj}.",
-    "{subj} likes to {obj}.",
-    "{subj} like to drink {obj}.",
-    "{subj} likes to drink {obj}.",
-    "{subj} like to listen to {obj}.",
-    "{subj} likes to listen to {obj}.",
-    "{subj} like to go to {obj}.",
-    "{subj} likes to go to {obj}.",
-    "{subj} like the movie {obj}.",
-    "{subj} likes the movie {obj}.",
-    "{subj} like watching {obj}.",
-    "{subj} likes watching {obj}.",
-    "{subj} dislike {obj}",
-    "{subj} dislikes {obj}",
-    "{subj} have {obj} as a favorite.",
-    "{subj} has {obj} as a favorite.",
-    "{subj} want to do {obj}.",
-    "{subj} wants to do {obj}.",
-    "{subj} want {obj}.",
-    "{subj} wants {obj}.",
-    "{subj} want to work as {obj}.",
-    "{subj} wants to  work as {obj}.",
-    "{subj} have {obj} as an attribute.",
-    "{subj} has {obj} as an attribute."
-]
-
 # converts type to MLNI id, but always hardcoded so not super necessary
-labels2id = {"entailment": 2, "neutral": 1, "contradiction": 0}
-
-# positive: holds the regular templates
-# negative: holds all other templates (for a given label) to generate contradictory verbalizations
-positive_templates: Dict[str, list] = defaultdict(list)
-negative_templates: Dict[str, list] = defaultdict(list)
-
-# removes no-relation template if not used
-if not args.negative_pattern:
-    templates = templates[1:]
-
-# adds verbalizations to corresponding dictionary
-for label in relation_labels:
-    for template in templates:
-        if template in relation_templates[label]:
-            positive_templates[label].append(template)
-        else:
-            negative_templates[label].append(template)
+# 2-1-0 was wrong according to MNLI labels
+labels2id = {"positive": 0, "neutral": 1, "negative": 2}
 
 
 def dnli2mlni(
         instance: REInputFeatures,
-        positive_templates,
-        negative_templates,
         templates,
-        negn=1,
-        posn=1,
 ):
-    if instance.label == "neutral":
-        template = random.choices(templates, k=negn)
-        return [
-            MNLIInputFeatures(
-                premise=instance.context,
-                hypothesis=f"{t.format(subj=instance.subj, obj=instance.obj)}.",
-                label=labels2id["contradiction"],
-            )
-            for t in template
-        ]
-
-    # Generate the positive examples
     mnli_instances = []
-    print(len(positive_templates[instance.label]))
-    positive_template = random.choices(positive_templates[instance.label], k=posn)
-    mnli_instances.extend(
-        [
-            MNLIInputFeatures(
-                premise=instance.context,
-                hypothesis=f"{t.format(subj=instance.subj, obj=instance.obj)}.",
-                label=labels2id["entailment"],
-            )
-            for t in positive_template
-        ]
-    )
-
-    # Generate the negative templates
-    negative_template = random.choices(negative_templates[instance.label], k=negn)
-    mnli_instances.extend(
-        [
-            MNLIInputFeatures(
-                premise=instance.context,
-                hypothesis=f"{t.format(subj=instance.subj, obj=instance.obj)}.",
-                label=labels2id["neutral"],
-            )
-            for t in negative_template
-        ]
+    relation = instance.relation
+    # use first person template if appropriate - always first, otherwise use second template for third person
+    if instance.subj.lower() == "i":
+        template = templates[relation][0]
+    else:
+        template = templates[relation][1]
+    mnli_instances.append(
+        MNLIInputFeatures(
+            premise=instance.context,
+            hypothesis=f"{template.format(subj=instance.subj, obj=instance.obj)}",
+            label=labels2id[instance.label],
+        )
     )
 
     return mnli_instances
@@ -554,12 +383,7 @@ def dnli2mlni(
 
 with open(args.input_file, "rt") as f:
     mnli_data = []
-    stats = []
     for line in json.load(f):
-        # filter out relations with "other", "<blank>" for now as no template specified;
-        # other could potentially be manually converted but not really worth it: ~2.8% of test set
-        if line['triple2'][1] == 'other' or line['triple2'][1] == '<blank>':
-            continue
         """ 
         DNLI asks if sentence2 is entailed by sentence 1:
         therefore, subject and object are taken from second sentence,
@@ -570,19 +394,14 @@ with open(args.input_file, "rt") as f:
             REInputFeatures(
                 subj=line['triple2'][0],
                 obj=line['triple2'][2],
-                pair_type="",  # possibly inferrable from verified test set
+                relation=line['triple2'][1],
                 context=line['sentence1'],
-                label=line['triple2'][1]  # label = relation, not entailment!
+                label=line['label']
             ),
-            positive_templates,
-            negative_templates,
-            templates,
-            negn=args.negn,
+            relation_templates
         )
         mnli_data.extend(mnli_instance)
-        # stats.append(line["relation"] != "no_relation")
 
 with open(args.output_file, "wt") as f:
-    for data in mnli_data:
-        f.write(f"{json.dumps(data.__dict__)}\n")
-    # json.dump([data.__dict__ for data in mnli_data], f, indent=2)
+    # f.write(json.dumps(mnli_data))
+    json.dump([data.__dict__ for data in mnli_data], f, indent=2)

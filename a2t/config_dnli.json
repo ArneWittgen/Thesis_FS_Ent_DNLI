@@ -66,7 +66,9 @@
         "favorite_hobby",
         "favorite",
         "nationality",
-        "favorite_movie"
+        "favorite_movie",
+        "favorite_place",
+        "favorite_book"
     ],
     "templates": {
         "no_relation": [
@@ -351,6 +353,16 @@
             "{subj} have {obj} as favorite movie.",
             "{subj} has {obj} as favorite movie.",
             "{subj}\u00e2\u0080\u0099s favorite movie is {obj}."
+        ],
+        "favorite_place":  [
+            "{subj} have {obj} as favorite place.",
+            "{subj} has {obj} as favorite place.",
+            "{subj}\u00e2\u0080\u0099s favorite place is {obj}."
+        ],
+        "favorite_book":  [
+            "{subj} have {obj} as favorite book.",
+            "{subj} has {obj} as favorite book.",
+            "{subj}\u00e2\u0080\u0099s favorite book is {obj}."
         ],
 
         "want_do":  [
