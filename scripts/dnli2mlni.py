@@ -23,15 +23,15 @@ class REInputFeatures:
 class MNLIInputFeatures:
     premise: str
     hypothesis: str
-    label: int
+    label: str
 
 
 # sys.path.append("./")
 parser = ArgumentParser()
 input_path = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_dev_full.jsonl'))
+    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_train_full.jsonl'))
 output_path = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_dev_full.mnli.json'))
+    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_train_full.mnli.json'))
 parser.add_argument("--input_file", type=str, default=input_path)
 parser.add_argument("--output_file", type=str, default=output_path)
 parser.add_argument("--negative_pattern", action="store_true", default=False)
@@ -356,7 +356,7 @@ relation_templates = {
 
 # converts type to MLNI id, but always hardcoded so not super necessary
 # 2-1-0 was wrong according to MNLI labels
-labels2id = {"positive": 0, "neutral": 1, "negative": 2}
+labels2id = {"positive": "entailment", "neutral": "neutral", "negative": "contradiction"}
 
 
 def dnli2mlni(
