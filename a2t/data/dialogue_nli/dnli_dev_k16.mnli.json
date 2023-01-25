@@ -1,0 +1,762 @@
+[
+  {
+    "premise": "ah yeah my parents are not supporting my dream to become a musician .",
+    "hypothesis": "i work as musician.",
+    "label": "entailment"
+  },
+  {
+    "premise": "no but i became a bee farmer .",
+    "hypothesis": "i work as farmer.",
+    "label": "entailment"
+  },
+  {
+    "premise": "that is nice , i am a custodian for now to pay bills .",
+    "hypothesis": "i work as janitor.",
+    "label": "entailment"
+  },
+  {
+    "premise": "hi , i love walking 3 miles a day . baby delivery nurse here .",
+    "hypothesis": "i work as nurse.",
+    "label": "entailment"
+  },
+  {
+    "premise": "that is great , i spent ten years in human services .",
+    "hypothesis": "i am an employee of people.",
+    "label": "entailment"
+  },
+  {
+    "premise": "thank you . you cook ? people like your food ? i am 23 ? how old are you ?",
+    "hypothesis": "i like to eat all.",
+    "label": "entailment"
+  },
+  {
+    "premise": "yea its fairly big . what color is your hair mine is blonde .",
+    "hypothesis": "i am blonde.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i am sorry for that i used to live on a farm .",
+    "hypothesis": "i come from farm.",
+    "label": "entailment"
+  },
+  {
+    "premise": "my mom is a pole dancer . my pet turtle is my best friend .",
+    "hypothesis": "i have friend.",
+    "label": "entailment"
+  },
+  {
+    "premise": "my fourth son hates scorpions too . i do not understand my children .",
+    "hypothesis": "i am the parent of son.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i do not love music much now . i do love baking !",
+    "hypothesis": "i like to do baking.",
+    "label": "entailment"
+  },
+  {
+    "premise": "hey there , that sounds good right now , i am learning a new recipe , love cooking .",
+    "hypothesis": "i like to do cooking.",
+    "label": "entailment"
+  },
+  {
+    "premise": "when i look at my blocks i like to sing about the letters .",
+    "hypothesis": "i like to do singing.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i love gymnastics its my favorite to do as far as sports !",
+    "hypothesis": "i like to do gymnastics.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i love dogs , coffee is also something i love !",
+    "hypothesis": "i like to drink coffee.",
+    "label": "entailment"
+  },
+  {
+    "premise": "a little rough , broke up with my boyfriend a few months ago .",
+    "hypothesis": "i am the spouse of single.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i got a cat named ziggy when i moved to the united states . he likes reggae music .",
+    "hypothesis": "i live in united states.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i am from pennsylvania and terrified of clowns .",
+    "hypothesis": "i don't like clowns.",
+    "label": "entailment"
+  },
+  {
+    "premise": "oh young people . the holidays are coming . that makes me sad .",
+    "hypothesis": "i don't like holiday.",
+    "label": "entailment"
+  },
+  {
+    "premise": "on the weekend i dance , i also work in a bookstore and studied chemistry .",
+    "hypothesis": "i studied in chemistry.",
+    "label": "entailment"
+  },
+  {
+    "premise": "exactly . one of my favorites is new kids on the block .",
+    "hypothesis": "i like to listen to new kids on the block.",
+    "label": "entailment"
+  },
+  {
+    "premise": "that is great . i am more of a classical music buff . mozart and bach .",
+    "hypothesis": "i like to listen to classical.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i got a new job just yesterday to be a life coach .",
+    "hypothesis": "i am currently employed.",
+    "label": "entailment"
+  },
+  {
+    "premise": "although i am searching for a new job , i think i can help you with bees .",
+    "hypothesis": "i am currently seeking employment.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i hang at the work out place and chat .",
+    "hypothesis": "i am currently employed.",
+    "label": "entailment"
+  },
+  {
+    "premise": "ah that is cool , i have two cats and got a collection of 1000 hats for them !",
+    "hypothesis": "i like cat.",
+    "label": "entailment"
+  },
+  {
+    "premise": "when i retire in few years i will travel all over the country to nascar races .",
+    "hypothesis": "i want to do retire.",
+    "label": "entailment"
+  },
+  {
+    "premise": "oh you have a dog too . i have three .",
+    "hypothesis": "i have a 3 dog.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i just got finished feeding my fish .",
+    "hypothesis": "i have a fish.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i enjoy the company of a poodle and boxer .",
+    "hypothesis": "i have a dog.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i do not work i am a stay at home mom and i love it .",
+    "hypothesis": "i own home.",
+    "label": "entailment"
+  },
+  {
+    "premise": "blue . . . i believe . my hobby is skateboarding , and i broke my arm one time .",
+    "hypothesis": "i have skateboarding as a hobby.",
+    "label": "entailment"
+  },
+  {
+    "premise": "how exciting ! i enjoy shopping ! i own my dream house already , looking to get my dream car !",
+    "hypothesis": "i have shopping as a hobby.",
+    "label": "entailment"
+  },
+  {
+    "premise": "its nice that you enjoy it . i love knitting so i understand using your hands .",
+    "hypothesis": "i have knitting as a hobby.",
+    "label": "entailment"
+  },
+  {
+    "premise": "blue . . . i believe . my hobby is skateboarding , and i broke my arm one time .",
+    "hypothesis": "my friends has skateboarding as a hobby.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i have the ability to make time stop .",
+    "hypothesis": "i have the ability to going back to the future.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i understand . i am an art major , so i live for the summer .",
+    "hypothesis": "i am currently student.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i joined the navy because i like navy blue , but infantry has sexy uniforms also .",
+    "hypothesis": "i have navy blue as a favorite.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i do not like country music , maybe in the future , i am only 13 now .",
+    "hypothesis": "i am 13 years old.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i like to take care of myself with expensive things .",
+    "hypothesis": "i have firm as an attribute.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i have a huge house . you can decorate your room however you want .",
+    "hypothesis": "i live in house.",
+    "label": "entailment"
+  },
+  {
+    "premise": "yeah she had it painted bright red too .",
+    "hypothesis": "i like red.",
+    "label": "entailment"
+  },
+  {
+    "premise": "no clowns for me either i do like purple and green for a bedroom .",
+    "hypothesis": "i like purple.",
+    "label": "entailment"
+  },
+  {
+    "premise": "they are very cute . i was in the military so it is great therapy .",
+    "hypothesis": "i used to work as military.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i am good . about to go to basketball practice .",
+    "hypothesis": "i like basketball.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i enjoy going to the park .",
+    "hypothesis": "i like to go to park.",
+    "label": "entailment"
+  },
+  {
+    "premise": "good , i am off on sunday and i go to church on sunday .",
+    "hypothesis": "i like to go to church.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i love singing frozen but my favorite band is up . saw them in concert !",
+    "hypothesis": "i have up as a favorite.",
+    "label": "entailment"
+  },
+  {
+    "premise": "i like survival games . reminds me of when my aunt helped me escape somalia .",
+    "hypothesis": "i and aunt are family.",
+    "label": "entailment"
+  },
+  {
+    "premise": "that is very good . i work in a library . how about you ?",
+    "hypothesis": "i like to do travel.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i enjoy the great outdoors and being in the water .",
+    "hypothesis": "i like to read psychology.",
+    "label": "neutral"
+  },
+  {
+    "premise": "hi , how are you ? do you like sports ?",
+    "hypothesis": "my friends has skateboarding as a hobby.",
+    "label": "neutral"
+  },
+  {
+    "premise": "that has been happening to me since my surgery .",
+    "hypothesis": "i have have issues as an attribute.",
+    "label": "neutral"
+  },
+  {
+    "premise": "yikes ! i am still in high school .",
+    "hypothesis": "i like purple.",
+    "label": "neutral"
+  },
+  {
+    "premise": "my parents would not approve as it is they do not approve of my career .",
+    "hypothesis": "i like shopping.",
+    "label": "neutral"
+  },
+  {
+    "premise": "they are black and orange .",
+    "hypothesis": "i have helpful as an attribute.",
+    "label": "neutral"
+  },
+  {
+    "premise": "hi there , how is it going ?",
+    "hypothesis": "i like to eat pie.",
+    "label": "neutral"
+  },
+  {
+    "premise": "awesome . . . i like dry land though and horseback riding .",
+    "hypothesis": "i like purple.",
+    "label": "neutral"
+  },
+  {
+    "premise": "hi how are you ? i own a cow .",
+    "hypothesis": "i work as electrician.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i like them , my black lab trooper enjoys their music as well .",
+    "hypothesis": "i live in colorado.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i get you , my favorite rapper is pretty stylish , travis scott .",
+    "hypothesis": "my mother works as dentist.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i would not say a lot , just fall cleanup stuff .",
+    "hypothesis": "i work as farmer.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i like country too ! i am kinda tired tonight from a long day at the shipyard .",
+    "hypothesis": "i like to go to ocean.",
+    "label": "neutral"
+  },
+  {
+    "premise": "big city life to overwhelming too much pressure .",
+    "hypothesis": "i have medications.",
+    "label": "neutral"
+  },
+  {
+    "premise": "nemo , i love him already . its a tea mix , green and black .",
+    "hypothesis": "i own library.",
+    "label": "neutral"
+  },
+  {
+    "premise": "congrats ! i love music and playing my guitar and violin .",
+    "hypothesis": "i have the ability to speak language.",
+    "label": "neutral"
+  },
+  {
+    "premise": "that is okay . the price of having fun . what do you do ?",
+    "hypothesis": "i have skater rob dryden as a favorite.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i have been to spain a few times , where do you go for thanksgiving ?",
+    "hypothesis": "i like to do travel.",
+    "label": "neutral"
+  },
+  {
+    "premise": "to be honest , it is pretty much all i eat . . .",
+    "hypothesis": "i have pizza as a favorite.",
+    "label": "neutral"
+  },
+  {
+    "premise": "they are nice except when i get in trouble . do you have a favorite movie ?",
+    "hypothesis": "i like character.",
+    "label": "neutral"
+  },
+  {
+    "premise": "no . i do not have money to spend on chocolate . my wife takes it all .",
+    "hypothesis": "i don't have degree.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i will think about it . but i have a feminist march to attend later .",
+    "hypothesis": "i like believes in women.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i just enjoy photography and the colors red and silver .",
+    "hypothesis": "i have the ability to 3 speak language.",
+    "label": "neutral"
+  },
+  {
+    "premise": "my robot bathes me in coconut oil .",
+    "hypothesis": "i like to do creating artificial intelligence.",
+    "label": "neutral"
+  },
+  {
+    "premise": "my parents are old . but they are rich bankers !",
+    "hypothesis": "i am currently student.",
+    "label": "neutral"
+  },
+  {
+    "premise": "get out ! i love mickey . my friend and i sing frozen songs during playground time .",
+    "hypothesis": "i like to go to theme park.",
+    "label": "neutral"
+  },
+  {
+    "premise": "hi there , how are you .",
+    "hypothesis": "i have aerosmith as a favorite.",
+    "label": "neutral"
+  },
+  {
+    "premise": "cairo . i usually stick out though with my really light skin and big brown eyes .",
+    "hypothesis": "i work as waitress.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i am good , i just got off work and tired , i have two jobs .",
+    "hypothesis": "i work as stunt double.",
+    "label": "neutral"
+  },
+  {
+    "premise": "hi , i am part deaf .",
+    "hypothesis": "i have plant flowers as a hobby.",
+    "label": "neutral"
+  },
+  {
+    "premise": "yeah i agree , rich in heart .",
+    "hypothesis": "my father has 0 hobby as a hobby.",
+    "label": "neutral"
+  },
+  {
+    "premise": "what is your dream job ?",
+    "hypothesis": "i studied in high school.",
+    "label": "neutral"
+  },
+  {
+    "premise": "it was the only station i could get in my laboratory , and now i am hooked .",
+    "hypothesis": "i own clothes.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i work at a elementary school and love going to the beach on holiday !",
+    "hypothesis": "i have board games as a hobby.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i used to stay in shape helping my dad during his nascar races . do you watch ?",
+    "hypothesis": "my father used to have racer as a job.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i do love gardening . i work in a shipyard .",
+    "hypothesis": "i have navy blue as a favorite.",
+    "label": "neutral"
+  },
+  {
+    "premise": "just getting older and holidays upset me . how do they make you feel ?",
+    "hypothesis": "i don't like to reveal things about myself.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i donate half of my check to different veteran charities .",
+    "hypothesis": "i have volunteering as a hobby.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i read anything with spiderman !",
+    "hypothesis": "i work as chef.",
+    "label": "neutral"
+  },
+  {
+    "premise": "this is gary . heading to the park soon with my family .",
+    "hypothesis": "i am the parent of <blank>.",
+    "label": "neutral"
+  },
+  {
+    "premise": "wow cool ! i got a new job just yesterday .",
+    "hypothesis": "i like to eat healthy.",
+    "label": "neutral"
+  },
+  {
+    "premise": "good , just living that army life .",
+    "hypothesis": "i am currently did not graduate.",
+    "label": "neutral"
+  },
+  {
+    "premise": "you just might do that . i love to watch television .",
+    "hypothesis": "i work as construction worker.",
+    "label": "neutral"
+  },
+  {
+    "premise": "hello what are you up to this evening ?",
+    "hypothesis": "i work as pianist.",
+    "label": "neutral"
+  },
+  {
+    "premise": "that is great . i sing and i love baseball , football and soccer . you need singers ?",
+    "hypothesis": "my mother owns 2 footballs.",
+    "label": "neutral"
+  },
+  {
+    "premise": "haha yea so does mine .",
+    "hypothesis": "i am dark.",
+    "label": "neutral"
+  },
+  {
+    "premise": "that is funny . i could eat a donut while i work on my vintage cars .",
+    "hypothesis": "i have working on antique cars as a hobby.",
+    "label": "neutral"
+  },
+  {
+    "premise": "do they have turtles ? mine goes missing when my toys are all over the floor .",
+    "hypothesis": "i am under 5 years old.",
+    "label": "neutral"
+  },
+  {
+    "premise": "i am a construction worker . i do not know much about computers .",
+    "hypothesis": "i work as musician.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i reside in california .",
+    "hypothesis": "i live in pennsylvania.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "oh i am been retired now for years . and loving it !",
+    "hypothesis": "i am currently employed.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i work on my parents farm .",
+    "hypothesis": "i am an employee of convenience store manager.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am 46 yrs old i live in california and i have 46 kids .",
+    "hypothesis": "i live in united states.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "yeah haha i went to vet school but i would rather work from home .",
+    "hypothesis": "i studied in culinary.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "later this evening , i am sneaking away to catch up in concert . my fav !",
+    "hypothesis": "i have insane clown posse as a favorite.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i thought about being a chef for the army .",
+    "hypothesis": "i work as librarian.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a construction worker , do you travel a lot ?",
+    "hypothesis": "i work as plumber.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i have 5 cats and 2 dogs .",
+    "hypothesis": "i have a 12 cat.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "problem is i do a lot of traveling like to spain .",
+    "hypothesis": "i don't like traveling.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am doing pretty good . got back from walking a few dogs for my business . tired .",
+    "hypothesis": "i work as tour guide.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i do , good thing too because i am now selling insurance to companies .",
+    "hypothesis": "i work as nurse.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "no they died in somalia before my aunt helped me escape to the united states .",
+    "hypothesis": "i live in california.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "definitely monopoly . i am an elementary teacher , and my kids do too .",
+    "hypothesis": "i work as chef.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i work for the military .",
+    "hypothesis": "i am an employee of farm.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "in the army here , i live in canada .",
+    "hypothesis": "i am an employee of residence.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i love music ! i play a few different instruments and teach piano on the side .",
+    "hypothesis": "i work as mail carrier.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "impressive . i am a professional wrestler .",
+    "hypothesis": "i work as cashier.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i can teach you , i am a musician and a music teacher !",
+    "hypothesis": "i work as teacher.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a senior in high school , hopefully i will get a scholarship .",
+    "hypothesis": "i studied in college.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "wow that does sound busy , i do not have kids , but 3 horses .",
+    "hypothesis": "i have a 11 horse.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a ok nurse i have dripped some babies though but i am getting better .",
+    "hypothesis": "i work as librarian.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "its easily done on the way to clients houses , plumbers are always on the go .",
+    "hypothesis": "i work as chef.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i do not have one but i like pizza .",
+    "hypothesis": "i have pizza with black olives as a favorite.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a ok nurse i have dripped some babies though but i am getting better .",
+    "hypothesis": "i work as engineer.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a piano teacher on the side .",
+    "hypothesis": "i work as engineer.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a professional dog walker and the pups tend to get up early .",
+    "hypothesis": "i work as electrician.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a piano teacher on the side .",
+    "hypothesis": "i work as entertainer.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am employed in the education industry .",
+    "hypothesis": "i work as chef.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am an electrician .",
+    "hypothesis": "i work as stunt double.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "wow cool ! i got a new job just yesterday .",
+    "hypothesis": "i am currently retired.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "it was fun . probably why i became a dog walker .",
+    "hypothesis": "i work as nurse.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "well as a 46 year old recording engineer i can relate with that .",
+    "hypothesis": "i work as librarian.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am good just freezing in alaska .",
+    "hypothesis": "i live in city.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "my parents are teachers and together we love board games .",
+    "hypothesis": "i work as farmer.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i think the best movie is mean girls . i watch it over and over !",
+    "hypothesis": "i have horror as a favorite.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "oh wow . i moved to the united states . did you ?",
+    "hypothesis": "i live in california.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "and i work at a school so kids everywhere .",
+    "hypothesis": "i am an employee of fulltime in a shipyard.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "that must be beautiful ! i am just playing some guitar , being a musician can be boring .",
+    "hypothesis": "i work as electrician.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a waitress . it works but i wish i could make more money .",
+    "hypothesis": "i work as doctor.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "are u single or married .",
+    "hypothesis": "i am the spouse of single.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "well i like working in my dog walking business ! dogs are the best .",
+    "hypothesis": "i work as nurse.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i work in it and have been at the same company for 15 years .",
+    "hypothesis": "i am currently almost done.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "nice ! do you like nascar ? my father drove for a while .",
+    "hypothesis": "my father used to have salesman as a job.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am employed by the us postal service .",
+    "hypothesis": "i am an employee of farm.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "hiya , i do not see many people as i live on a farm owned by my parents .",
+    "hypothesis": "i am an employee of public sector.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "good afternoon . chef larry here .",
+    "hypothesis": "i work as gynecologist.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a teacher , and do not have time to go more than twice a week .",
+    "hypothesis": "i work as recording engineer.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i am a tennis player professionally .",
+    "hypothesis": "i work as physically demanding.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i love playing folk music . i actually hope to be a professional musician someday .",
+    "hypothesis": "i work as assistant.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i have dogs and i walk them . and a cat .",
+    "hypothesis": "i work as insurance.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "i have a hat collection of over 1000 hats .",
+    "hypothesis": "i have 1006 hats.",
+    "label": "contradiction"
+  },
+  {
+    "premise": "ah that is cool , i have two cats and got a collection of 1000 hats for them !",
+    "hypothesis": "i have 1004 hats.",
+    "label": "contradiction"
+  }
+]

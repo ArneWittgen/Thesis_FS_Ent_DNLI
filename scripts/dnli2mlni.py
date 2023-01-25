@@ -29,9 +29,9 @@ class MNLIInputFeatures:
 # sys.path.append("./")
 parser = ArgumentParser()
 input_path = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_train_full.jsonl'))
+    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_dev_k4.jsonl'))
 output_path = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_train_full.mnli.json'))
+    os.path.join(os.path.dirname(__file__), '..', 'a2t', 'data', 'dialogue_nli', 'dnli_dev_k4.mnli.json'))
 parser.add_argument("--input_file", type=str, default=input_path)
 parser.add_argument("--output_file", type=str, default=output_path)
 parser.add_argument("--negative_pattern", action="store_true", default=False)
