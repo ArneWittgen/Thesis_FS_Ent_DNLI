@@ -1,13 +1,13 @@
 {
-    "name": "DNLI_test_RoBERTa_TACRED",
+    "name": "roberta-dev-1e-6",
     "task_name": "dnli",
     "features_class": "a2t.tasks.tuple_classification.TACREDFeatures",
     "dataset": "dnli",
-    "test_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_clean_test.jsonl",
+    "test_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_dev_full.jsonl",
     "use_cuda": true,
     "half": true,
     "nli_models": [
-        "HiTZ/A2T_RoBERTa_SMFA_TACRED-re"
+        "/home/awittgen/Thesis_FS_Ent_DNLI/models/roberta-1e-6"
     ],
     "labels": [
         "no_relation",
