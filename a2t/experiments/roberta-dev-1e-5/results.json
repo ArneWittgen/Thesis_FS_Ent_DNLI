@@ -1,0 +1,11 @@
+{
+    "/home/awittgen/Thesis_FS_Ent_DNLI/models/roberta-1e-5": {
+        "test": {
+            "optimal_threshold": 0.5,
+            "positive_accuracy": 0.12244515282205137,
+            "precision": 0.07044393791381744,
+            "recall": 0.1216951059441215,
+            "f1-score": 0.08923415371923553
+        }
+    }
+}

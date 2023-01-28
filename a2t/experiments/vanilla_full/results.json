@@ -1,0 +1,18 @@
+{
+    "/home/awittgen/Thesis_FS_Ent_DNLI/models/vanilla_full": {
+        "dev": {
+            "optimal_threshold": 0.9469469469469469,
+            "positive_accuracy": 0.07162947684230264,
+            "precision": 0.05973188528762939,
+            "recall": 0.06600412525782862,
+            "f1-score": 0.06271156244432567
+        },
+        "test": {
+            "optimal_threshold": 0.9469469469469469,
+            "positive_accuracy": 0.08074298711144806,
+            "precision": 0.07516525023607176,
+            "recall": 0.07543593631539044,
+            "f1-score": 0.07530035001418976
+        }
+    }
+}

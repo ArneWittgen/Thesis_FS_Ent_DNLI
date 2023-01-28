@@ -1,0 +1,11 @@
+{
+    "HiTZ/A2T_RoBERTa_SMFA_TACRED-re": {
+        "test": {
+            "optimal_threshold": 0.5,
+            "positive_accuracy": 0.24298711144806673,
+            "precision": 0.2549809715692859,
+            "recall": 0.21588324488248672,
+            "f1-score": 0.23380888843272093
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "/home/awittgen/Thesis_FS_Ent_DNLI/models/nli_k32_3": {
+        "dev": {
+            "optimal_threshold": 0.934934934934935,
+            "positive_accuracy": 0.05714285714285714,
+            "precision": 0.05319148936170213,
+            "recall": 0.047619047619047616,
+            "f1-score": 0.05025125628140704
+        },
+        "test": {
+            "optimal_threshold": 0.934934934934935,
+            "positive_accuracy": 0.10026535253980288,
+            "precision": 0.07652138983731673,
+            "recall": 0.07221379833206976,
+            "f1-score": 0.07430521696733301
+        }
+    }
+}

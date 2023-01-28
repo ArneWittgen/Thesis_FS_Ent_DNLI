@@ -1,0 +1,18 @@
+{
+    "/home/awittgen/Thesis_FS_Ent_DNLI/models/tacred_k4_2": {
+        "dev": {
+            "optimal_threshold": 0.997997997997998,
+            "positive_accuracy": 0.16666666666666666,
+            "precision": 0.5,
+            "recall": 0.16666666666666666,
+            "f1-score": 0.25
+        },
+        "test": {
+            "optimal_threshold": 0.997997997997998,
+            "positive_accuracy": 0.16489764973464746,
+            "precision": 0.15437158469945356,
+            "recall": 0.06425322213798332,
+            "f1-score": 0.09073875802997858
+        }
+    }
+}
