@@ -1,13 +1,14 @@
 {
-    "name": "roberta-dev-4e-6",
+    "name": "tacred_k4_3",
     "task_name": "dnli",
     "features_class": "a2t.tasks.tuple_classification.TACREDFeatures",
     "dataset": "dnli",
-    "test_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_dev_full.jsonl",
+    "dev_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_dev_k4.jsonl",
+    "test_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_test.json",
     "use_cuda": true,
     "half": true,
     "nli_models": [
-        "/home/awittgen/Thesis_FS_Ent_DNLI/models/roberta-4e-6"
+        "/home/awittgen/Thesis_FS_Ent_DNLI/models/tacred_k4_3"
     ],
     "labels": [
         "no_relation",
@@ -390,3 +391,4 @@
     "valid_conditions": {
     }
 }
+

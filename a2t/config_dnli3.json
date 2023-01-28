@@ -1,5 +1,5 @@
 {
-    "name": "nli_k4_3",
+    "name": "vanilla_k4_3",
     "task_name": "dnli",
     "features_class": "a2t.tasks.tuple_classification.TACREDFeatures",
     "dataset": "dnli",
@@ -8,7 +8,7 @@
     "use_cuda": true,
     "half": true,
     "nli_models": [
-        "/home/awittgen/Thesis_FS_Ent_DNLI/models/nli_k4_3"
+        "/home/awittgen/Thesis_FS_Ent_DNLI/models/vanilla_k4_3"
     ],
     "labels": [
         "no_relation",
