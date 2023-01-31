@@ -1,0 +1,18 @@
+{
+    "/home/awittgen/Thesis_FS_Ent_DNLI/models/vanilla_k32": {
+        "dev": {
+            "optimal_threshold": 0.0,
+            "positive_accuracy": 0.06666666666666667,
+            "precision": 0.0219435736677116,
+            "recall": 0.06666666666666667,
+            "f1-score": 0.0330188679245283
+        },
+        "test": {
+            "optimal_threshold": 0.0,
+            "positive_accuracy": 0.08206974981046247,
+            "precision": 0.04180747320652699,
+            "recall": 0.08206974981046247,
+            "f1-score": 0.05539563743363398
+        }
+    }
+}

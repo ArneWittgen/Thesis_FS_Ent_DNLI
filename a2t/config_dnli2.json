@@ -1,13 +1,14 @@
 {
-    "name": "DNLI_test_RoBERTa_vanilla",
+    "name": "tacred_k4_3",
     "task_name": "dnli",
     "features_class": "a2t.tasks.tuple_classification.TACREDFeatures",
     "dataset": "dnli",
-    "test_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_clean_test.jsonl",
+    "dev_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_dev_k4.jsonl",
+    "test_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_test.json",
     "use_cuda": true,
     "half": true,
     "nli_models": [
-        "roberta-large-mnli"
+        "/home/awittgen/Thesis_FS_Ent_DNLI/models/tacred_k4_3"
     ],
     "labels": [
         "no_relation",
@@ -66,7 +67,9 @@
         "favorite_hobby",
         "favorite",
         "nationality",
-        "favorite_movie"
+        "favorite_movie",
+        "favorite_place",
+        "favorite_book"
     ],
     "templates": {
         "no_relation": [
@@ -352,6 +355,16 @@
             "{subj} has {obj} as favorite movie.",
             "{subj}\u00e2\u0080\u0099s favorite movie is {obj}."
         ],
+        "favorite_place":  [
+            "{subj} have {obj} as favorite place.",
+            "{subj} has {obj} as favorite place.",
+            "{subj}\u00e2\u0080\u0099s favorite place is {obj}."
+        ],
+        "favorite_book":  [
+            "{subj} have {obj} as favorite book.",
+            "{subj} has {obj} as favorite book.",
+            "{subj}\u00e2\u0080\u0099s favorite book is {obj}."
+        ],
 
         "want_do":  [
             "{subj} want to do {obj}.",
@@ -378,3 +391,4 @@
     "valid_conditions": {
     }
 }
+

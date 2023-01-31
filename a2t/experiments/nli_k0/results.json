@@ -1,0 +1,11 @@
+{
+    "roberta-large-mnli": {
+        "test": {
+            "optimal_threshold": 0.5,
+            "positive_accuracy": 0.18271417740712662,
+            "precision": 0.12567089933237335,
+            "recall": 0.1819560272934041,
+            "f1-score": 0.14866434378629503
+        }
+    }
+}
