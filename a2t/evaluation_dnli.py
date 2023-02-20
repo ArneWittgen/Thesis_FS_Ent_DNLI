@@ -23,7 +23,7 @@ import torch
 # Changed imports to local path to avoid dependency on venv-located library files
 from a2t.tasks.tuple_classification import TACREDFeatures
 from a2t.base import EntailmentClassifier
-from defintions_dnli import DLNIRelationClassificationTask, DNLIRelationClassificationDataset
+from defintions_dnli import DLNIRelationClassificationTask, DNLIRelationClassificationDataset, G2KYRelationClassificationDataset
 
 
 def main(args):
@@ -37,7 +37,7 @@ def main(args):
     task_class = DLNIRelationClassificationTask
     task = task_class.from_config(args.config)  # (**vars(config))
 
-    dataset_class = DNLIRelationClassificationDataset
+    dataset_class = G2KYRelationClassificationDataset
 
     assert hasattr(config, "dev_path") or hasattr(config, "test_path"), "At least a test or dev path must be provided."
 

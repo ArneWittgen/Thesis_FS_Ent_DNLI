@@ -37,7 +37,7 @@ class DLNIRelationClassificationTask(RelationClassificationTask):
 
 
 class DNLIRelationClassificationDataset(Dataset):
-    """A class to handle DNLI datasets.
+    """A class to handle the DNLI dataset.
 
     This class converts DNLI data files into a list of `a2t.tasks.TACREDFeatures`.
     While DNLI has a different format to TACRED, it shares enough similarities to exploit them for easier conversion;
@@ -69,6 +69,37 @@ class DNLIRelationClassificationDataset(Dataset):
                         context=line['sentence1'],
                         # needs to be mapped depending on whether sentence2 is entailed or not
                         label=relation_mapper(line),
+                    )
+                )
+
+
+class G2KYRelationClassificationDataset(Dataset):
+    """A class to handle the attribute classification dataset from "Getting to know you" (Wu et al 2020).
+
+    TODO: change this
+    This class converts the G2KY data into a list of `a2t.tasks.TACREDFeatures`.
+    """
+
+    def __init__(self, input_path: str, labels: List[str], *args, **kwargs) -> None:
+        """
+        Args:
+            input_path (str): The path to the input file.
+            labels (List[str]): The possible label set of the dataset.
+        """
+        super().__init__(labels=labels, *args, **kwargs)
+
+        with open(input_path, "rt") as f:
+            for i, line in enumerate(json.load(f)):
+                self.append(
+                    TACREDFeatures(
+                        subj=line['subj'],
+                        obj=line['obj'],
+                        # doesn't exist in dataset; can potentially be inferred using an external library
+                        # for tagging
+                        # inst_type=f"{line['subj_type']}:{line['obj_type']}",
+                        context=line['premise'],
+                        # needs to be mapped depending on whether sentence2 is entailed or not
+                        label=line['relation'],
                     )
                 )
 
