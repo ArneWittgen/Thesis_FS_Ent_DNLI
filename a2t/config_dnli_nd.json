@@ -1,14 +1,13 @@
 {
-    "name": "tacred_k32_3",
+    "name": "nli_k16_nd",
     "task_name": "dnli",
     "features_class": "a2t.tasks.tuple_classification.TACREDFeatures",
     "dataset": "dnli",
-    "dev_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_dev_k32.jsonl",
     "test_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/dialogue_nli/dnli_test.json",
     "use_cuda": true,
     "half": true,
     "nli_models": [
-        "/home/awittgen/Thesis_FS_Ent_DNLI/models/tacred_k32_3"
+        "/home/awittgen/Thesis_FS_Ent_DNLI/models/nli_k16"
     ],
     "labels": [
         "no_relation",
