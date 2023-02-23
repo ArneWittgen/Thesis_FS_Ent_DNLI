@@ -1,0 +1,11 @@
+{
+    "/home/awittgen/Thesis_FS_Ent_DNLI/models/dnli_1e-6": {
+        "test": {
+            "optimal_threshold": 0.5,
+            "positive_accuracy": 0.12172972972972973,
+            "precision": 0.09551139283878705,
+            "recall": 0.12054054054054054,
+            "f1-score": 0.10657618046262665
+        }
+    }
+}
