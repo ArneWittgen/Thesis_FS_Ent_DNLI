@@ -45,8 +45,9 @@ class DNLIRelationClassificationDataset(Dataset):
     For more information, see original paper by Welleck et al. arXiv:1811.00671v2
 
     DNLI asks if sentence2 is entailed by sentence 1: therefore, subject and object are taken from second sentence,
-    but context is the first sentence. Then, the label is logical.
-    (otherwise it would always be entailed as the triple belongs to the first sentence)
+    but context is the first sentence. (otherwise it would always be entailed as the triple belongs to the first sentence)
+    This procedure lacks because the first sentence may nevertheless contain valid relations that could be ignored when
+    the dataset is read in this way.
     """
 
     def __init__(self, input_path: str, labels: List[str], *args, **kwargs) -> None:
@@ -74,10 +75,11 @@ class DNLIRelationClassificationDataset(Dataset):
 
 
 class G2KYRelationClassificationDataset(Dataset):
-    """A class to handle the attribute classification dataset from "Getting to know you" (Wu et al 2020).
+    """A class to handle the attribute classification dataset from "Getting to know you" (Wu et al 2020, arXiv:1908.04621).
 
-    TODO: change this
-    This class converts the G2KY data into a list of `a2t.tasks.TACREDFeatures`.
+    This class converts the G2KY data into a list of `a2t.tasks.TACREDFeatures`. As the G2KY dataset needed to be
+    preprocessed anyways, much of the conversion work has already been done. This function only needs to read the right
+    dictionary entries from the dataset and instantiate them as TACREDfeatures object.
     """
 
     def __init__(self, input_path: str, labels: List[str], *args, **kwargs) -> None:
@@ -98,7 +100,6 @@ class G2KYRelationClassificationDataset(Dataset):
                         # for tagging
                         # inst_type=f"{line['subj_type']}:{line['obj_type']}",
                         context=line['premise'],
-                        # needs to be mapped depending on whether sentence2 is entailed or not
                         label=line['relation'],
                     )
                 )

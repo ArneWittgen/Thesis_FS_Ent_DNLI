@@ -1,14 +1,14 @@
 {
-    "name": "g2ky_dnli_full",
+    "name": "g2ky_nli_full",
     "task_name": "dnli",
     "features_class": "a2t.tasks.tuple_classification.TACREDFeatures",
     "dataset": "dnli",
-    "dev_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/G2KY/dev.json",
-    "test_path": "/home/awittgen/Thesis_FS_Ent_DNLI/a2t/data/G2KY/test.json",
+    "dev_path": "data/G2KY/dev.json",
+    "test_path": "data/G2KY/test.json",
     "use_cuda": true,
     "half": true,
     "nli_models": [
-        "/home/awittgen/Thesis_FS_Ent_DNLI/models/dnli_1e-6"
+        "roberta-large-mnli"
     ],
     "labels": [
         "no_relation",
